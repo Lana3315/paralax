@@ -1,0 +1,72 @@
+*,
+*::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+/* Основные стили  */
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.paralax {
+  position: relative;
+  width: 100%;
+}
+.mountain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.paralax_montain_1 {
+  background: url("./images/m1.png") 0 0 / cover no-repeat;
+}
+.paralax_montain_2 {
+  z-index: 1;
+  background: url("./images/m2.png") bottom right / 45% no-repeat;
+}
+.paralax_montain_3 {
+  z-index: 1;
+  background: url("./images/m3.png") left bottom / 100% no-repeat;
+}
+.paralax_fog {
+  background: url("./images/fog.png") bottom / 100% no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.content {
+  position: relative;
+}
+.body {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+.content_header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+}
