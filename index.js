@@ -8,6 +8,9 @@ $(document).ready(function () {
     var p_block = s / h_block * 100;
     var o = 1 - 1 / 100 * p_block;
     var z_1 = 1 + (w / 10000 * p_block);
-    $('.paralax_fog').css('transform','scale('+z_1+')');
+    $('.paralax_fog').css('transform', 'scale(' + z_1 + ')');
+    $('.paralax_fog').css('opacity', o);
+    var z_2 = 1 + (w / 5000000 * p);
+    $('.paralax_montain_1 ').css('transform', 'scale(' + z_2 + ')');
   })
 })
